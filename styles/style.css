@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Andika", sans-serif;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.nav-link:hover {
+  color: purple;
+}
+
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+#projects h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+#projects hr {
+  width: 40%;
+}
+
+.progect_item {
+  height: 550px;
+  flex-shrink: 0;
+}
+.progect_item:hover {
+  transform: scale(1.05);
+}
+.progect_item a {
+  text-decoration: none;
+}
+.progect_item a div {
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.progect_item a p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.icons a {
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+}
+.icons a:hover {
+  color: orangered;
+}
+.icons a i:hover {
+  transform: scale(1.25);
+}
+.icons a + a {
+  margin-left: 15px;
+}
+
+.progect_item_img, .about_sertificate_img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .about_description {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 992px) {
+  .about_title {
+    font-size: 55px;
+    font-weight: 700;
+  }
+  .about_description {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=style.css.map */

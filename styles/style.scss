@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap");
+$main-text: #fff;
+$hover-color: purple;
+
+@mixin font-mixin($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Andika", sans-serif;
+}
+.nav-link {
+  color: $main-text;
+  @include font-mixin(20px, 400);
+  &:hover {
+    color: $hover-color;
+  }
+}
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+#projects {
+  h2 {
+    @include font-mixin(35px, 700);
+  }
+  hr {
+    width: 40%;
+  }
+}
+.progect_item {
+  height: 550px;
+  flex-shrink: 0;
+  &:hover{
+    transform: scale(1.05);
+  }
+  a {
+    text-decoration: none;
+    div {
+      height: 90%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    p {
+      @include font-mixin(20px, 400);
+    }
+  }
+}
+.icons {
+  a {
+    @include font-mixin(40px, 900);
+    text-decoration: none;
+    color: $main-text;
+    &:hover {
+      color: orangered;
+    }
+    i {
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+  a + a {
+    margin-left: 15px;
+  }
+}
+
+.progect_item_img,  .about_sertificate_img{
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  
+  .about_description{
+    @include font-mixin(20px, 400);
+  }
+}
+@media (min-width: 992px) {
+  .about_title {
+    @include font-mixin(55px, 700);
+  }
+  .about_description{
+    @include font-mixin(25px, 400);
+  }
+}
