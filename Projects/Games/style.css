@@ -1,0 +1,63 @@
+.game {
+  width: 1000px;
+  height: 450px;
+  margin: auto;
+  background-image: url(img/depositphotos_84987984-stock-illustration-seamless-prairie-landscape.jpg);
+  z-index: -1;
+}
+#dino.jump{
+  animation: jump 0.8s linear;
+}
+#dino {
+  width: 115px;
+  height: 110px;
+  background: url(img/dino2.png) 0px 0px;
+  position: relative;
+  top: 280px;
+  left: 0;
+  animation: play 0.8s steps(8) infinite;
+  z-index: 1;
+}
+#cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url(img/cactus.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 240px;
+  left:1000px;
+  filter: brightness(-50%);
+  animation: cactusMove 3s infinite linear;
+}
+@keyframes cactusMove {
+  0% {
+    left: 1000px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 280px;
+  }
+  25% {
+    top:190px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 190px;
+  }
+  100% {
+    top: 280px;
+  }
+}
+@keyframes play {
+  100% {
+    background-position: -1365px;
+  }
+}
+

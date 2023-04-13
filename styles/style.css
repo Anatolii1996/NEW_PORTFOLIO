@@ -26,10 +26,6 @@ body {
   margin-left: 10px;
 }
 
-#welcome-section {
-  height: 850px;
-}
-
 #projects h2 {
   font-size: 35px;
   font-weight: 700;
@@ -86,10 +82,14 @@ body {
 }
 
 .about_sertificate {
-  height: 335px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.row {
+  align-items: stretch;
 }
 
 @media (min-width: 576px) {

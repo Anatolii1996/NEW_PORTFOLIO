@@ -28,9 +28,7 @@ body {
 .nav-item + .nav-item {
   margin-left: 10px;
 }
-#welcome-section{
-  height: 850px
-}
+
 #projects {
   h2 {
     @include font-mixin(35px, 700);
@@ -92,11 +90,14 @@ body {
 }
 
 .about_sertificate{
-  height: 335px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   
+}
+.row {
+  align-items: stretch;
 }
 
 
@@ -105,6 +106,7 @@ body {
   .about_description{
     @include font-mixin(20px, 400);
   }
+  
 }
 @media (min-width: 992px) {
   .about_title {
@@ -113,4 +115,5 @@ body {
   .about_description{
     @include font-mixin(25px, 400);
   }
+  
 }
